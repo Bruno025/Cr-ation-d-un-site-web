@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="fr"> <!--Pour le type de language de la page-->
+    <head>
+        <title>Le Restaurant Splash</title>
+        <meta charset="UTF-8"> <!--pour corriger les fautes de l'affichage des caratères spéciaux-->
+        <meta name="description" content="..."> <!--Décrire brièvement l'objectif ou l'utilité de la page-->
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"></script>
+        <script src="https://kit.fontawesome.com/843780e4e7.js" crossorigin="anonymous"></script>    
+    </head>
+
+    <body>
+        <header class="header">
+            <section>
+                <div  class="nav-bar">
+                    <img src="img.html/img 14.png" alt="" class="logo">
+                    <ul class="links">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <div class="buttons">
+                        <a href="#" class="action-button pro">Espace pro</a>
+                        <a href="#" class="action-button">Se connecter</a>
+                        <div class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                        <!--<div class="search-box">
+                            <input type="search" name="" id="" placeholder="Search Here...">
+                        </div>-->
+                    </div>
+                    <div class="burger-menu-button">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+                <div class="burger-menu ">
+                    <ul class="links">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <div class="divider"></div>
+                        <div class="buttons-burger-menu open">
+                            <a href="#" class="action-button pro">Espace pro</a>
+                            <a href="#" class="action-button">Se connecter</a>
+                            <div class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                            <!--<div class="search-box">
+                                <input type="search" name="" id="" placeholder="Search Here...">
+                            </div>-->
+                        </div>
+                    </ul>
+                </div>
+            </section>
+    
+            <script>
+                const burgerMenuButton = document.querySelector(".burger-menu-button")
+                const burgerMenuButtonIcon = document.querySelector(".burger-menu-button i")
+                const burgerMenu = document.querySelector(".burger-menu")
+    
+                burgerMenuButton.onclick = function(){
+                    burgerMenu.classList.toggle("open")
+                    const isOpen = burgerMenu.classList.contains("open")
+                    burgerMenuButtonIcon.classList = isOpen ? "fa-solid fa-xmark" : "fa-solid fa-bars"
+                }
+            </script>
+
+            <h1 class="header-title">Le Restaurant Splash</h1>
+            <div class="landing-page">
+                <h1 class="big-title">Hâtif et Savoureux !</h1>
+                <a class="scroll-down" href="#plats-spécialité">Scroll <i class="fas fa-angle-down"></i></a>
+            </div>
+        </header>
+
+        <section class="services" id="services">
+            <div class="service-items">
+                <i class="fas fa-truck delivery-icon"></i>
+                <p class="service-details">Livraison à domicile </p>
+            </div>
+            <div class="service-items">
+                <i class="fa-solid fa-hand-holding-heart delivery-icon"></i>            
+                <p class="service-details">Aides volontaires</p>
+            </div>
+            <div class="service-items">
+                <i class="fa-solid fa-sack-dollar delivery-icon"></i> 
+                <p class="service-details">Remboursements</p>          
+            </div>
+        </section>
+
+        <main >
+            <h1 class="second-title">A propos du Restaurant</h1>
+            <section class="home" id="home">
+                <div class="home-text">
+                    <p class="description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ad labore pariatur asperiores amet laboriosam sequi porro iusto dignissimos explicabo facilis optio rerum aut dolore reprehenderit, maiores minima velit ea! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis iusto facere enim nulla. Voluptatum porro iste nostrum ad sapiente dolore velit voluptate, quidem quo magni voluptates minus odio obcaecati quod! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, mollitia iusto, sapiente labore quasi accusantium voluptas ad error alias, reprehenderit 
+                    </p>
+                    <p class="description2">Prêt à vous en mettre plein la vue?</p>
+                </div>
+                <div class="home-img">
+                    <img src="img.html/img15.png" alt="" width="100%">
+                </div>
+            </section>
+        
+        <section class="plats-spécialité" id="plats-spécialité">
+            <h2 class="third-title">Spécialités</h2>
+            <div class="best-plats">
+                <a class="plats-box plat1 no-grid" title="Pizza italienne">
+                    <div class="plats-details">
+                        <p class="plats-name">Pizza italienne</p>
+                        <pi class="plats-price">19 $</pi>
+                    </div>
+                </a>
+
+                <a class="plats-box plat2 no-grid" title="Hamburgers">
+                    <div class="plats-details">
+                        <p class="plats-name">Hamburgers (viande boeuf)</p>
+                        <pi class="plats-price">10 $</pi>
+                    </div>
+                </a>
+
+                <a class="plats-box plat3 no-grid" title="Shawarma">
+                    <div class="plats-details">
+                        <p class="plats-name">Shawarma au poulet</p>
+                        <pi class="plats-price">14 $</pi>
+                    </div>
+                </a>
+
+                <a class="plats-box plat4 no-grid" title="Frites françaises">
+                    <div class="plats-details">
+                        <p class="plats-name">Frites françaises</p>
+                        <pi class="plats-price">8 $</pi>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <h2 class="second-title">Évènements</h2>
+            <section class="home" id="home">
+                <div class="home-img">
+                    <img src="img.html/img18.png" alt="" width="100%" >
+                </div>
+                <div class="home-text">
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ad labore pariatur asperiores amet laboriosam sequi porro iusto dignissimos explicabo facilis optio rerum aut dolore reprehenderit, maiores minima velit ea! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis iusto facere enim nulla. Voluptatum porro iste nostrum ad sapiente dolore velit voluptate, quidem quo magni voluptates minus odio obcaecati quod! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, mollitia iusto, sapiente labore quasi accusantium voluptas ad error alias, reprehenderit </p>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere earum, laborum deleniti ipsa aperiam, numquam incidunt placeat eligendi voluptate blanditiis enim voluptatum libero porro quas repellendus, repudiandae soluta eveniet provident.</p>
+                    <a href="#" class="btn">Participer à un évènement</a>
+                </div>
+
+            </section>
+        </main>
+
+        <section class="cuisine">
+            <h2 class="second-title">Notre cuisine</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Mkx4iRqcbr4?si=ySkHjQ-YAGuAW4vY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/LgO2LujGeq0?si=uqYDxK74WQKiNXY1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="description">
+                <a href="menu.html">Voir notre menu</a>
+            </p>
+        </section>
+
+        <section>
+            <div class="heading">
+                <h2 class="second-title">Nos clients</h2>
+            </div>
+            <div class="customers-container">
+                <div class="box">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem autem laborum, non iste vitae assumenda nemo illum laudantium sapiente optio mollitia unde eum obcaecati in laboriosam, voluptatum eligendi! Dolore, sapiente.</p>
+                    <h2>Michael Lawson</h2>
+                    <img src="img.html/img25.png" alt="">
+                </div>
+                <div class="box">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem autem laborum, non iste vitae assumenda nemo illum laudantium sapiente optio mollitia unde eum obcaecati in laboriosam, voluptatum eligendi! Dolore, sapiente.</p>
+                    <h2>Laura Hanson</h2>
+                    <img src="img.html/img26.png" alt="">
+                </div>
+                <div class="box">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem autem laborum, non iste vitae assumenda nemo illum laudantium sapiente optio mollitia unde eum obcaecati in laboriosam, voluptatum eligendi! Dolore, sapiente.</p>
+                    <h2>Max Andy</h2>
+                    <img src="img.html/img27.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="footer">
+            <div class="footer-box">
+                <h2>Le Restaurant Splash</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis illo consectetur vero, ab doloremque magni saepe iusto soluta deleniti dicta itaque ratione commodi. Sit, doloribus libero blanditiis obcaecati eos molestias.</p>
+                <div class="social">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"></a><i class="fa-brands fa-twitter"></i></a>    
+                    <a href="#"></a><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"></a><i class="fa-brands fa-tiktok"></i></a> 
+                </div>
+            </div>
+            <div class="footer-box">
+                <h3>Support</h3>
+                <a href="#"></a><li>Product</li></a>
+                <a href="#"></a><li>Aide et support</li></a>
+                <a href="#"></a><li>Politique de retour</li></a>
+                <a href="#"></a><li>Termes d'utilisatio</li></a>
+                <a href="#"></a><li>Product</li></a>
+            </div>
+            <div class="footer-box">
+                <h3>Voir Guides</h3>
+                <a href="#"></a><li>Caratéristiques</li></a>
+                <a href="#"></a><li>Carrières</li></a>
+                <a href="#"></a><li>Blog</li></a>
+                <a href="#"></a><li>Nos Branches</li></a>
+            </div>
+            <div class="footer-box">
+                <h3>Contact</h3>
+                <div class="contact">
+                    <span><i class="fa-solid fa-location-dot"></i>86 rue du soleil, Gatineau, Québec, Canada</span>
+                    <span><i class="fa-solid fa-phone"></i> +1 XXX-XXX-XXXX</span>
+                    <span><i class="fa-solid fa-envelope"></i> Splash@gmail.com</span>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p class="copyright">&copy;2024 - Splash</p>
+            <a href="" class="cgv">Conditions générales de ventes</a>
+        </footer>
+    </body>
+</html>

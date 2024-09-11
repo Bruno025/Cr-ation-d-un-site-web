@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr"> <!--Pour le type de language de la page-->
+    <head>
+        <title>Le Restaurant Splash</title>
+        <meta charset="UTF-8"> <!--pour corriger les fautes de l'affichage des caratères spéciaux-->
+        <meta name="description" content="..."> <!--Décrire brièvement l'objectif ou l'utilité de la page-->
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/843780e4e7.js" crossorigin="anonymous"></script>    
+    </head>
+
+    <body>
+        <header class="header3">
+            <section>
+                <div  class="nav-bar">
+                    <img src="img.html/img 14.png" alt="" class="logo">
+                    <ul class="links">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <div class="buttons">
+                        <a href="#" class="action-button pro">Espace pro</a>
+                        <a href="#" class="action-button">Se connecter</a>
+                        <div class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                        <!--<div class="search-box">
+                            <input type="search" name="" id="" placeholder="Search Here...">
+                        </div>-->
+                    </div>
+                    <div class="burger-menu-button">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+                <div class="burger-menu ">
+                    <ul class="links">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <div class="divider"></div>
+                        <div class="buttons-burger-menu open">
+                            <a href="#" class="action-button pro">Espace pro</a>
+                            <a href="#" class="action-button">Se connecter</a>
+                            <div class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                            <!--<div class="search-box">
+                                <input type="search" name="" id="" placeholder="Search Here...">
+                            </div>-->
+                        </div>
+                    </ul>
+                </div>
+            </section>
+
+            <script>
+                const burgerMenuButton = document.querySelector(".burger-menu-button")
+                const burgerMenuButtonIcon = document.querySelector(".burger-menu-button i")
+                const burgerMenu = document.querySelector(".burger-menu")
+    
+                burgerMenuButton.onclick = function(){
+                    burgerMenu.classList.toggle("open")
+                    const isOpen = burgerMenu.classList.contains("open")
+                    burgerMenuButtonIcon.classList = isOpen ? "fa-solid fa-xmark" : "fa-solid fa-bars"
+                }
+            </script>
+
+            <h1 class="header-title">Contact</h1>
+            <div class="landing-page">
+                <h1 class="big-title">Hâtif et Savoureux !</h1>
+                <a class="scroll-down" href="#services-contact">Scroll <i class="fas fa-angle-down"></i></a>
+            </div>
+        </header>
+
+        <section>
+            <h2 class="second-title"><i class="fa-solid fa-location-dot"></i>Où nous trouver :</h2>
+                <pi class="description3"></i>86 rue du soleil,</p>
+                <pi class="description3">Gatineau, Québec</p>
+                <pi class="description3"> Canada.</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2792.652463681556!2d-75.8483531!3d45.577427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cd1e1158238c6eb%3A0x9a04e21b56692db8!2sRue%20du%20Soleil%2C%20Cantley%2C%20QC%20J8V%203B2!5e0!3m2!1sfr!2sca!4v1721939955929!5m2!1sfr!2sca" width="800" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>   
+
+        <section class="services-contact" id="services-contact">
+                <i class="fa fa-phone delivery-icons"></i>
+            <div class="service-items"></div>
+                <p class="contact-details">Pour nous contacter </p>
+            </div>
+        </section>
+
+        <section class="contact-box">
+            <form action="contact.html">
+            <fieldset>
+                <legend>Nous contacter</legend>
+                    <div>
+                        <label for="emailinput">Votre email</label>
+                        <input type="text" name="email" id="emailinput" placeholder="contact@demo.fr" required>
+                    </div>
+                    <div>
+                        <label for="nameinput">Votre nom </label>
+                        <input type="text" name="email" id="nameinput" placeholder="Tom" required>
+                    </div>
+                    <div>
+                        <label for="fileinput">Pièce Jointe</label>
+                        <input type="file" name="file" id="fileinput">
+                    </div>
+                    <div>
+                        <label>Sexe</label>
+                        <div>
+                            <input type="radio" name="Sexe" id="masculin">
+                            <label for="masculin">Masculin</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="Sexe" id="feminin">
+                            <label for="feminin">Feminin</label>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="animalinput">Animal préféré</label>
+                        <select name="Animal" id="animalinput">
+                            <option>Chien</option>
+                            <option>Chat</option>
+                            <option>Hamster</option>
+                        </select>
+                    </div>
+                        <label for="message">Votre message</label>
+                        <textarea name="message" id="message" cols="25" rows="5" placeholder="Votre message ou questions"></textarea>
+                    <div>
+                        <label><input type="checkbox" name="cgu">J'accepte les conditions d'utilisations</label>
+                    </div>
+                    <div>
+                        <input type="submit" value="Envoyer un email">
+                        <input type="reset" value="Annuler">
+                    </div>
+                </fieldset>
+            </form>
+            </section>  
+            <p class="retour">
+                <a href="index.html">Revenir à l'accueil</a>
+            </p>
+
+        <footer>
+            <p class="copyright">&copy;2024 - Splash</p>
+            <a href="" class="cgv">Conditions générales de ventes </a>
+        </footer>
+
+    </body>
+</html>

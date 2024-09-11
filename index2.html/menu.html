@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="fr"> <!--Pour le type de language de la page-->
+    <head>
+        <title>Le Restaurant Splash</title>
+        <meta charset="UTF-8"> <!--pour corriger les fautes de l'affichage des caratères spéciaux-->
+        <meta name="description" content="..."> <!--Décrire brièvement l'objectif ou l'utilité de la page-->
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/843780e4e7.js" crossorigin="anonymous"></script>    
+    </head>
+
+    <body>
+        <header class="header2">
+            <section>
+                <div  class="nav-bar">
+                    <img src="img.html/img 14.png" alt="" class="logo">
+                    <ul class="links">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <div class="buttons">
+                        <a href="#" class="action-button pro">Espace pro</a>
+                        <a href="#" class="action-button">Se connecter</a>
+                        <div class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                        <!--<div class="search-box">
+                            <input type="search" name="" id="" placeholder="Search Here...">
+                        </div>-->
+                    </div>
+                    <div class="burger-menu-button">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+                <div class="burger-menu ">
+                    <ul class="links">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <div class="divider"></div>
+                        <div class="buttons-burger-menu open">
+                            <a href="#" class="action-button pro">Espace pro</a>
+                            <a href="#" class="action-button">Se connecter</a>
+                            <div class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                            <!--<div class="search-box">
+                                <input type="search" name="" id="" placeholder="Search Here...">
+                            </div>-->
+                        </div>
+                    </ul>
+                </div>
+            </section>
+    
+            <script>
+                const burgerMenuButton = document.querySelector(".burger-menu-button")
+                const burgerMenuButtonIcon = document.querySelector(".burger-menu-button i")
+                const burgerMenu = document.querySelector(".burger-menu")
+    
+                burgerMenuButton.onclick = function(){
+                    burgerMenu.classList.toggle("open")
+                    const isOpen = burgerMenu.classList.contains("open")
+                    burgerMenuButtonIcon.classList = isOpen ? "fa-solid fa-xmark" : "fa-solid fa-bars"
+                }
+            </script>
+
+            <h1 class="header-title">Menu Splash</h1>
+            <div class="landing-page">
+                <h1 class="big-title">Hâtif et Savoureux !</h1>
+                <a class="scroll-down" href="#entrées">Scroll <i class="fas fa-angle-down"></i></a>
+            </div>
+        </header>
+      
+        <section class="all-plats" id="all-plats">
+            <h2 class="second-title">Notre menu</h2>
+            <div class="plats-grid">
+                <a class="plats-grid1 plats-box">
+                    <div class="plats-details">
+                        <p class="plats-name">Poulet au curry</p>
+                        <pi class="plats-price">13 $</p>
+                    </div>
+                </a>
+                <a class="plats-grid2 plats-box">
+                    <div class="plats-details">
+                        <p class="plats-name">Brochettes de poulet</p>
+                        <pi class="plats-price">12 $</p>
+                    </div>
+                </a>
+                <a class="plats-grid3 plats-box">
+                    <div class="plats-details">
+                        <p class="plats-name">Poutine</p>
+                        <pi class="plats-price">11 $</p>
+                    </div>
+                </a>
+                <a class="plats-grid4 plats-box">
+                    <div class="plats-details">
+                        <p class="plats-name">Spaghetti </p>
+                        <pi class="plats-price">15 $</p>
+                    </div>
+                </a>
+                <a class="plats-grid5 plats-box">
+                    <div class="plats-details">
+                        <p class="plats-name">BLT wrap</p>
+                        <pi class="plats-price">9 $</p>
+                    </div>
+                </a>
+                <a class="plats-grid6 plats-box">
+                    <div class="plats-details">
+                        <p class="plats-name">Brochettes plt curry </p>
+                        <pi class="plats-price">14 $</p>
+                    </div>
+                </a>
+            </div>
+        </section>  
+
+    
+        <section class="entrées" id="entrées">
+            <h2 class="second-title">Entrées</h2>
+            <div class="plats-container">
+                <div class="box">
+                    <img src="img.html/img19.png" alt="">
+                    <h3>Entrée 1</h3>
+                    <div class="content">
+                        <span>$25</span>
+                        <a href="#">Ajouter à la commande</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img.html/img20.png" alt="">
+                    <h3>Entrée 2</h3>
+                    <div class="content">
+                        <span>$26</span>
+                        <a href="#">Ajouter à la commande</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img.html/img21.png" alt="">
+                    <h3>Entrée 3</h3>
+                    <div class="content">
+                        <span>$27</span>
+                        <a href="#">Ajouter à la commande</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img.html/img22.png" alt="">
+                    <h3>Entrée 4</h3>
+                    <div class="content">
+                        <span>$28</span>
+                        <a href="#">Ajouter à la commande</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img.html/img23.png" alt="">
+                    <h3>Entrée 5</h3>
+                    <div class="content">
+                        <span>$29</span>
+                        <a href="#">Ajouter à la commande</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img.html/img24.png" alt="">
+                    <h3>Entrée 6</h3>
+                    <div class="content">
+                        <span>$30</span>
+                        <a href="#">Ajouter à la commande</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <article class="article-menu">
+            <table>
+                <tr>
+                    <td colspan="2">
+                        <h2 class="second-title">Plats principals</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Burger à l'italienne</strong><br>
+                        Pain, viande , salade,tomate
+                    </td>
+                    <td>24 $</td>
+                    <td>
+                        <button>Commander</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Burger à l'italienne</strong><br>
+                        Pain, viande , salade,tomate
+                    </td>
+                    <td>25 $</td>
+                    <td>
+                        <button>Commander</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Burger à l'italienne</strong><br>
+                        Pain, viande , salade,tomate
+                    </td>
+                    <td>26 $</td>
+                    <td>
+                        <button>Commander</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <h2 class="second-title">Desserts</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Burger à l'italienne</strong><br>
+                        Pain, viande , salade,tomate
+                    </td>
+                    <td>27 $</td>
+                    <td>
+                        <button>Commander</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Burger à l'italienne</strong><br>
+                        Pain, viande , salade,tomate
+                    </td>
+                    <td>28 $</td>
+                    <td>
+                        <button>Commander</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Burger à l'italienne</strong><br>
+                        Pain, viande , salade,tomate
+                    </td>
+                    <td>29 $</td>
+                    <td>
+                        <button >Commander</button>
+                    </td>
+                </tr>
+            </table>
+        </article>
+        
+        <p class="retour">
+            <a href="index.html">Revenir à l'accueil</a>
+        </p>
+
+        <footer>
+            <p class="copyright">&copy;2024 - Splash</p>
+            <a href="" class="cgv">Conditions générales de ventes</a>
+        </footer>
+
+    </body>
+</html>
+
+
+
+
